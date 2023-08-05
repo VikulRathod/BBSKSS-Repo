@@ -5,6 +5,53 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
+
+/* code add  sandesh  */
+ 
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #590505;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
+}
+
+/* Form styles */
+
+/* Increase font size and line height for the select dropdown */
+.card-registration .form-select.form-select-lg {
+  font-size: 1rem;
+  line-height: 2.15;
+}
+
+/* Adjust the position of the select arrow */
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+/* Center the content in the card */
+.card-registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add spacing to the card body */
+.card-body {
+  margin: 15px;
+}
+
+.scrollable-section {
+  height: 80vh; 
+  overflow-y: auto;
+}
+
+/* code add sandesh */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
