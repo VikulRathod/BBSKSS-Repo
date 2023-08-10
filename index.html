@@ -147,6 +147,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col-lg-3 text-right">
                 <div class="d-inline-flex align-items-center">
                     <i class="fa fa-2x fa-phone text-primary mr-3"></i>
@@ -156,8 +157,27 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 text-right">
+            </div>
+            <div class="col-lg-3 text-right">
+            </div>
+            
+            
+            <div >
+                <div class="d-inline-flex align-items-center">
+                    
+                    <div class="text-left">
+                        <h5><a href="#" class="" style="color:orangered"
+                            id="openModal">*Payback To Society*</a></h5>
+                    </div>
+                </div>
+            </div>
+           
         </div>
+       
     </div>
+   
+
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
@@ -326,7 +346,9 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="carousel-item active" style="min-height: 300px;">
+
+
+                <!-- <div class="carousel-item active" style="min-height: 300px;">
                     <img class="position-relative w-100" src="img/india-main-image.webp"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-start justify-content-start">
@@ -337,7 +359,38 @@
                                 us</a>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="img/india-main-image.webp"
+                        style="min-height: 300px; object-fit: cover;">
+                    <div class="carousel-caption d-flex align-items-start justify-content-start">
+                        <div class="p-5 text-center" style="width: 100%; max-width: 1920px;">
+                            <!-- <h5 class="text-white text-uppercase mb-md-3" id="openModal">Payback To Society</h5> -->
+                            <!-- <a href="#" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2 ml-5 pl-5"
+                                id="openModal">Payback To Society</a> -->
+                            <!-- <h3><a href="#" class="" style="justify-content: center; color: chartreuse;"
+                                    id="openModal">Payback To Society</a></h3> -->
+                            </br>
+                            </br>
+                            <h1 class="display-3 text-white mb-md-4">भारतीय बंजारा समाज कर्मचारी सेवा संस्‍था</h1>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- The modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <h4>
+                            <p class="text-center">Thank you for supporting...</p>                                          
+                        </h4>
+                        <a href="joinBBSKSS.html"
+                            class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2 ml-5 pl-5">Join
+                            BBSKSS</a>
+                    </div>
+                </div>
+
+
                 <!-- <div class="carousel-item" style="min-height: 300px;">
                     <img class="position-relative w-100" src="img/carousel-2.png"
                         style="min-height: 300px; object-fit: cover;">
@@ -1005,6 +1058,27 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModal");
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+
+    </script>
 </body>
 
 </html>
