@@ -157,7 +157,8 @@
                                     <!-- <i class="bi bi-chevron-down"></i> -->
                                 </a>
                                 <ul class="dropdown-menu rounded-0 m-0">
-                                    <li><a href="centralmembers.html" class="dropdown-item"> केंद्रीय समिति </br> Central
+                                    <li><a href="centralmembers.html" class="dropdown-item"> केंद्रीय समिति </br>
+                                            Central
                                             Committee
                                         </a></li>
                                     <li class="dropdown">
@@ -214,7 +215,8 @@
                             </div>
 
                             <div class="nav-item dropdown mr-3">
-                                <a href="ongoing.html" class="nav-link dropdown-toggle" data-toggle="dropdown">गतिविधियॉं
+                                <a href="ongoing.html" class="nav-link dropdown-toggle"
+                                    data-toggle="dropdown">गतिविधियॉं
                                     <br>
                                     Activities</a>
                                 <div class="dropdown-menu rounded-0 m-0">
@@ -281,7 +283,7 @@
                                             <label class="form-label" for="FullName">
                                                 <h6>पूरा नाम Full Name</h6>
                                             </label>
-                                            <input type="text" id="FullName" class="form-control form-control-lg" />
+                                            <input type="text" id="fullName" class="form-control form-control-lg" />
                                         </div>
 
                                     </div>
@@ -296,14 +298,8 @@
                                             <label class="form-label" for="form11Example7">
                                                 <h6>पूरा पता Address</h6>
                                             </label>
-                                            <textarea class="form-control" id="form11Example7" rows="4"></textarea>
+                                            <textarea class="form-control" id="txtAddress" rows="4"></textarea>
                                         </div>
-                                        <!-- <div class="form-outline">
-                                            <label class="form-label" for="Address"></label>
-                                            <input type="text" id="Address" class="form-control form-control-lg" />
-
-                                        </div> -->
-
                                     </div>
                                 </div> </br>
 
@@ -319,29 +315,6 @@
                                         </div>
 
                                     </div>
-                                    <!-- <div class="col-md-6 mb-4">
-
-                                        <h6 class="mb-2 pb-1">Gender: </h6>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="femaleGender" value="option1" checked />
-                                            <label class="form-check-label" for="femaleGender">Female</label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="maleGender" value="option2" />
-                                            <label class="form-check-label" for="maleGender">Male</label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="otherGender" value="option3" />
-                                            <label class="form-check-label" for="otherGender">Other</label>
-                                        </div>
-
-                                    </div> -->
                                 </div> </br>
 
 
@@ -380,7 +353,7 @@
                                                 <h6>पदनाम Designation</h6>
                                             </label>
 
-                                            <input type="text" id="Designation" class="form-control form-control-lg" />
+                                            <input type="text" id="designation" class="form-control form-control-lg" />
                                         </div>
 
                                     </div> </br>
@@ -389,7 +362,7 @@
                                             <label class="form-label" for="form11Example7">
                                                 <h6>संगठन का नाम व पता</br>Organization name and address</h6>
                                             </label>
-                                            <textarea class="form-control" id="form11Example7" rows="4"></textarea>
+                                            <textarea class="form-control" id="organizationDetails" rows="4"></textarea>
 
                                         </div>
                                     </div></br>
@@ -404,7 +377,7 @@
                                                 </h6>
                                             </label>
 
-                                            <input type="text" id="form11Example7"
+                                            <input type="text" id="paymentReferenceNumber"
                                                 class="form-control form-control-lg" />
 
                                         </div>
@@ -412,10 +385,13 @@
                                     </div>
                                 </div>
 
-                                <div class="mt-4 pt-2  text-center margin-bottom:50">
-                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                                <div class="mt-4 pt-2 text-center margin-bottom:50">
+                                    <input class="btn btn-primary btn-lg" type="button" id="btnJoinBBSKSS"
+                                        value="Submit" />
                                 </div>
-
+                                <div class="col-md-10 mb-6 pb-2">
+                                    <label class="form-label" id="lblMessage"></label>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -424,47 +400,47 @@
         </div>
     </section>
 
-   <!-- Footer Start -->
-   <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-    <div class="row pt-5">
-        <div class="col-lg-8 col-md-12">
-            <div class="row">
-                <div class="col-md-10 mb-5">
-                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>FlatNo.103, Dhyan-Vaishnavi Apartment, Tomar Marg,
-                        Giripeth Nagpur-440010</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+91 9423472580</p>
-                    <p><i class="fa fa-envelope mr-2"></i>bbskss2020@gmail.com</p>
-                    <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-square mr-2" href="#"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-10 mb-5">
+                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>FlatNo.103, Dhyan-Vaishnavi Apartment, Tomar Marg,
+                            Giripeth Nagpur-440010</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 9423472580</p>
+                        <p><i class="fa fa-envelope mr-2"></i>bbskss2020@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-12 mb-5">
-            <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Payback To Society</h5>
-            <p>Thank you for supporting BBSKSS. <br /> Your Payback To Society is the life of our organization.
-                Contributions from people like you secure the Banjara Way of Life for generations to come.</p>
-        </div>
-    </div>
-</div>
-<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-    style="border-color: rgba(256, 256, 256, .1) !important;">
-    <div class="row">
-        <div class="col-lg-8 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">&copy; <a href="https://www.bbskss.org"
-                    target="_blank">https://www.bbskss.org</a> All Rights Reserved. Designed by <a
-                    href="https://vhaashtech.com">VHaaSh Technologoies Private Limited</a>
-            </p>
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Payback To Society</h5>
+                <p>Thank you for supporting BBSKSS. <br /> Your Payback To Society is the life of our organization.
+                    Contributions from people like you secure the Banjara Way of Life for generations to come.</p>
+            </div>
         </div>
     </div>
-</div>
-<!-- Footer End -->
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-8 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">&copy; <a href="https://www.bbskss.org"
+                        target="_blank">https://www.bbskss.org</a> All Rights Reserved. Designed by <a
+                        href="https://vhaashtech.com">VHaaSh Technologoies Private Limited</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -482,6 +458,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/server.min.js"></script>
 </body>
 
 </html>
