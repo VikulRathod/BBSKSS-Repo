@@ -5081,7 +5081,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   /* background-color: skyblue; */
   /* Replace with your image path */
   background-size: cover;
-  background-position: right;
+  background-position: center;
   color: white;
   /* text-align: center; */
   /* padding: 100px 0; */
@@ -5099,6 +5099,13 @@ a.badge-dark:focus, a.badge-dark.focus {
 @media (min-width: 576px) {
   .jumbotron {
     padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .jumbotron {
+      padding: 50px 0;
   }
 }
 
