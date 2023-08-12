@@ -5,12 +5,15 @@
 
 .marquee {
     animation: marquee 50s linear infinite;
-    white-space: nowrap;                
+    white-space: nowrap;
 }
-.marquee-content{
+
+.marquee-content {
     color: red;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
 }
+
 @keyframes marquee {
     0% {
         transform: translateX(100%);
