@@ -16,7 +16,7 @@ $('#btnJoinBBSKSS').click(function () {
     var paymentAmount = $('#paymentAmount').val();
     var currentDate = new Date().toDateString();
 
-    var emailSubject = `BBSKSS New member joined : ${name}`;
+    var emailSubject = `BBSKSS.ORG | New member joined : ${name}`;
     var emailBody = `<h2 style='color:red;'>New Member Registration Details</h2>
 <table border="1">
 <tr><td>Name</td><td>${name}</td></tr>
@@ -33,7 +33,7 @@ $('#btnJoinBBSKSS').click(function () {
 `;
 
     var request = {
-        ToEmail: 'vikul.rathod.net@gmail.com', EmailSubject: emailSubject,
+        ToEmail: 'bbskss2020@gmail.com', EmailSubject: emailSubject,
         EmailBody: emailBody, IsBodyHtml: true
     };
 

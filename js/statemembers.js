@@ -55,71 +55,76 @@ $(function () {
     ];
 
     var delhi = [
-        { name: 'Rampal Rathod', city: 'Delhi', post: 'State Conveners', contact: '9818802999/ 9818801999', photo: 'img/noimage.png' },
+        { name: 'श्री रामपाल राठौड़', city: 'दिल्‍ली', post: 'State Conveners', contact: '9818801999', photo: 'img/noimage.png' },
+        { name: 'श्री धनपत धरसोत', city: 'दिल्‍ली', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' }
     ];
 
     var telagana = [
-        { name: 'Dr Ram Koti', city: 'Telangana', post: 'State Conveners', contact: '8125409470', photo: 'img/noimage.png' },
+        { name: 'डॉ राम कोटि', city: 'तेलंगाना', post: 'State Conveners', contact: '8125409470', photo: 'img/noimage.png' },
     ];
 
     var AndhraPradesh = [
-        { name: 'Dr Laxmikant Nayak VC', city: 'Andhra Pradesh', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
+        { name: 'डॉ. लक्ष्मीकांत नायक, कुलपति', city: 'आंध्र प्रदेश', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
     ];
 
     var Karnataka = [
-        { name: 'Dr Harilal Pawar', city: 'Karnataka', post: 'State Conveners', contact: '9901379445', photo: 'img/noimage.png' },
+        { name: 'डॉ. हरिलाल पवार', city: 'कर्नाटक', post: 'State Conveners', contact: '9901379445', photo: 'img/noimage.png' },
     ];
 
     var UttarPradesh = [
-        { name: 'Mr Munna Lal Nayak', city: 'Uttar Pradesh', post: 'State Conveners', contact: '8800223383', photo: 'img/noimage.png' },
+        { name: 'श्री मुन्ना लाल नायक', city: 'उत्तर प्रदेश', post: 'State Conveners', contact: '8800223383', photo: 'img/noimage.png' },
     ];
 
     var Hariyana = [
-        { name: 'Mr Sonu Rathore', city: 'Hariyana', post: 'State Conveners', contact: '9991171817', photo: 'img/noimage.png' },
+        { name: 'श्री सोनू राठौड़', city: 'हरियाणा', post: 'State Conveners', contact: '9991171817', photo: 'img/noimage.png' },
     ];
 
     var TamilNadu = [
-        { name: 'Adv M R Ramesh', city: 'Tamil Nadu', post: 'State Conveners', contact: '9943355283', photo: 'img/noimage.png' },
+        { name: 'वकील एम आर रमेश', city: 'तमिलनाडु', post: 'State Conveners', contact: '9943355283', photo: 'img/noimage.png' },
     ];
 
     var Kerala = [
-        { name: 'Mr Murugan Samy', city: 'Kerala', post: 'State Conveners', contact: '9072741550', photo: 'img/noimage.png' },
+        { name: 'श्री मुरुगन सामी', city: 'केरल', post: 'State Conveners', contact: '9072741550', photo: 'img/noimage.png' },
     ];
 
     var Odisha = [
-        { name: 'Mr Kheersagar Nayak', city: 'Odisha', post: 'State Conveners', contact: '9938429086', photo: 'img/noimage.png' },
+        { name: 'श्री खीरसागर नायक', city: 'ओडिशा', post: 'State Conveners', contact: '9938429086', photo: 'img/noimage.png' },
     ];
 
     var MadhyaPradesh = [
-        { name: 'Er Deependra Nayak', city: 'Madhya Pradesh', post: 'State Conveners', contact: '9826612007', photo: 'img/noimage.png' },
+        { name: 'ईआर. दीपेंद्र नायक', city: 'मध्य प्रदेश', post: 'State Conveners', contact: '9826612007', photo: 'img/noimage.png' },
     ];
 
     var Chhattisgarh = [
-        { name: 'Mr Pravin Naik', city: 'Chhattisgarh', post: 'State Conveners', contact: '7906082157', photo: 'img/noimage.png' },
+        { name: 'श्री प्रवीण नायक', city: 'छत्तीसगढ़', post: 'State Conveners', contact: '7906082157', photo: 'img/noimage.png' },
     ];
 
     var Gujarat = [
-        { name: 'Prof Govardhan Banjara', city: 'Gujarat', post: 'State Conveners', contact: '9998305819', photo: 'img/noimage.png' },
+        { name: 'प्रो. गोवर्धन बंजारा', city: 'गुजरात', post: 'State Conveners', contact: '9998305819', photo: 'img/noimage.png' },
     ];
 
     var Panjab = [
-        { name: 'Prof Mohan Tyagi', city: 'Panjab', post: 'State Conveners', contact: '9814479150', photo: 'img/noimage.png' },
+        { name: 'प्रो. मोहन त्यागी', city: 'पंजाब', post: 'State Conveners', contact: '9814479150', photo: 'img/noimage.png' },
     ];
 
     var UtaraKhand = [
-        { name: 'Ajit Singh Nayak', city: 'Utara Khand', post: 'State Conveners', contact: '9627138155/ 9412583931', photo: 'img/noimage.png' },
+        { name: 'श्री अजीत सिंह नायक', city: 'उत्तराखंड', post: 'State Conveners', contact: '9627138155/ 9412583931', photo: 'img/noimage.png' },
     ];
 
     var Tripura = [
-        { name: 'Dr Sandeep Rathod, IAS', city: 'Tripura', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
+        { name: 'डॉ. संदीप राठौड़, आईएएस', city: 'त्रिपुरा', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
     ];
 
     var JammuKashmir = [
-        { name: 'Yogesh Kumar', city: 'Jammu & Kashmir', post: 'State Conveners', contact: '9796495858', photo: 'img/noimage.png' },
+        { name: 'श्री योगेश कुमार', city: 'जम्मू और काश्मीर', post: 'State Conveners', contact: '9796495858', photo: 'img/noimage.png' },
     ];
 
     var WestBengal = [
-        { name: 'Mr Amit Rathod, IPS', city: 'West Bengal', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
+        { name: 'श्री अमित राठौड़, आईपीएस', city: 'पश्चिम बंगाल', post: 'State Conveners', contact: 'XXXX XXXX XX', photo: 'img/noimage.png' },
+    ];
+
+    var Rajasthan = [
+        { name: 'श्री अशोक बंजारा', city: 'राजस्‍थान', post: 'State Conveners', contact: '9350070012', photo: 'img/noimage.png' },
     ];
 
     var queryString = window.location.search;
@@ -135,7 +140,7 @@ $(function () {
 
     var selectedState = params.name;
     $('#stateMemberHeading').text(`Meet Our ${selectedState} State Committee Members`);
-    
+
     if (selectedState == 'Maharashtra') {
         bindMembers(maharashtra);
     } else if (selectedState == 'Delhi') {
@@ -172,6 +177,8 @@ $(function () {
         bindMembers(JammuKashmir);
     } else if (selectedState == 'WestBengal') {
         bindMembers(WestBengal);
+    } else if (selectedState == 'Rajasthan') {
+        bindMembers(Rajasthan);
     }
 
     function bindMembers(showMembers) {
