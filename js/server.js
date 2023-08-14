@@ -13,6 +13,7 @@ $('#btnJoinBBSKSS').click(function () {
     var designation = $('#designation').val();
     var organization = $('#organizationDetails').val();
     var paymentReference = $('#paymentReferenceNumber').val();
+    var paymentAmount = $('#paymentAmount').val();
     var currentDate = new Date().toDateString();
 
     var emailSubject = `BBSKSS New member joined : ${name}`;
@@ -25,6 +26,7 @@ $('#btnJoinBBSKSS').click(function () {
 <tr><td>Phone Number</td><td>${phone}</td></tr>
 <tr><td>Designation</td><td>${designation}</td></tr>
 <tr><td>Organization name</td><td>${organization}</td></tr>
+<tr><td>Payment Amount</td><td>${paymentAmount}</td></tr>
 <tr><td>Payment Reference No.</td><td>${paymentReference}</td></tr>
 <tr><td>Registration Date</td><td>${currentDate}</td></tr>
 </table>
