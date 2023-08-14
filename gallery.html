@@ -2,84 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>BBSKSS - BHARATIYA BANJARA SAMAJ KARMACHARI SEVA SANSTHA</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <title>BBSKSS - BHARATIYA BANJARA SAMAJ KARMACHARI SEVA SANSTHA</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-    <link href="css/home.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 
 
+  <style>
+    /* Add styles for enlarged image */
+    .enlarged-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .enlarged-image img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- jumbotron start -->
-    <div class="jumbotron text-center mb-3">
-      <div class="row">
-          <div class="col-3">
-              <a href="" class="text-decoration-none">
-                  <h1 class="m-0">
-                      <img src="img/bbsksslogo.png" class="nav-item" />
-                      <span style="color: red;">BBSKSS</span> <br />
-                      <span style="color: black;font-size: large;font-weight: bold;">Regd.No.
-                          500/Thane/1998</span>
-                  </h1>
-              </a>
-          </div>
-          <div class="col-9">
-              <h1 class="text-white" style="margin-bottom: 1em;">भारतीय बंजारा समाज कर्मचारी सेवा संस्‍था</h1>
-              <h1 style="color: red;">BHARATIYA BANJARA SAMAJ KARMACHARI SEVA SANSTHA</h1>
-              <a class="btn btn-primary mt-5" id="openModal">Payback To Society</a>
-          </div>
+  <!-- jumbotron start -->
+  <div class="jumbotron text-center mb-3">
+    <div class="row">
+      <div class="col-3">
+        <a href="" class="text-decoration-none">
+          <h1 class="m-0">
+            <img src="img/bbsksslogo.png" class="nav-item" />
+            <span style="color: red;">BBSKSS</span> <br />
+            <span style="color: black;font-size: large;font-weight: bold;">Regd.No.
+              500/Thane/1998</span>
+          </h1>
+        </a>
       </div>
+      <div class="col-9">
+        <h1 class="text-white" style="margin-bottom: 1em;">भारतीय बंजारा समाज कर्मचारी सेवा संस्‍था</h1>
+        <h1 style="color: red;">BHARATIYA BANJARA SAMAJ KARMACHARI SEVA SANSTHA</h1>
+        <a class="btn btn-primary mt-5" id="openModal">Payback To Society</a>
+      </div>
+    </div>
   </div>
   <!-- jumbotron end -->
 
-    <!-- marquee start -->
-    <div class="marquee-container pt-2">
-        <div class="marquee">
-            <pre
-                class="marquee-content">Silver Jublee Year Of Bharatiya Banjara Samaj Karmachari Seva Sanstha Celebration on 15th August 2023 at 12:00 pm.</pre>
-        </div>
+  <!-- marquee start -->
+  <div class="marquee-container pt-2">
+    <div class="marquee">
+      <pre
+        class="marquee-content">Silver Jublee Year Of Bharatiya Banjara Samaj Karmachari Seva Sanstha Celebration on 15th August 2023 at 12:00 pm.</pre>
     </div>
-    <!-- marquee end -->
+  </div>
+  <!-- marquee end -->
 
-    <!-- join model start -->
-    <div id="myModal" class="modal">
-        <div class="modal-content w-50">
-            <h4>
-                <!-- <p class="text-center">Thank you for supporting...</p> -->
+  <!-- join model start -->
+  <div id="myModal" class="modal">
+    <div class="modal-content w-50">
+      <h4>
+        <!-- <p class="text-center">Thank you for supporting...</p> -->
 
-                <p class="text-center small">
-                    Thank you for supporting BBSKSS. <br />
-                    Your <kbd>Payback To Society</kbd> is the life of our organization. <br />
-                    Contributions from people like you secure the Banjara Way of Life for generations to
-                    come.
-                </p>
-            </h4>
-            <div class="inline-block text-center">
-                <a href="joinBBSKSS.html" class="btn btn-primary font-weight-semi-bold">Join
-                    BBSKSS</a>
-                <button class="btn btn-warning font-weight-semi-bold ml-3" id="btnModelClose">Close</a>
-            </div>
-        </div>
+        <p class="text-center small">
+          Thank you for supporting BBSKSS. <br />
+          Your <kbd>Payback To Society</kbd> is the life of our organization. <br />
+          Contributions from people like you secure the Banjara Way of Life for generations to
+          come.
+        </p>
+      </h4>
+      <div class="inline-block text-center">
+        <a href="joinBBSKSS.html" class="btn btn-primary font-weight-semi-bold">Join
+          BBSKSS</a>
+        <button class="btn btn-warning font-weight-semi-bold ml-3" id="btnModelClose">Close</a>
+      </div>
     </div>
-    <!-- join model end -->
+  </div>
+  <!-- join model end -->
 
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid d-none d-lg-block">
+  <!-- Topbar Start -->
+  <!-- <div class="container-fluid d-none d-lg-block">
         <div class="row align-items-center py-4 px-xl-5">
             <div class="col-lg-3">
                 <a href="" class="text-decoration-none">
@@ -117,150 +137,151 @@
             </div>
         </div>
     </div> -->
-    <!-- Topbar End -->
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <div class="container-fluid">
-        <div class="row border-top px-xl-5">
-            <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 border-bottom">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
-                        <h1 class="m-0"><img src="img/logo1.png" class="nav-item m-1" />
-                            <span class="text-primary">BBSKSS</span>
-                        </h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav py-0">
-                            <div class="nav-item mr-3">
-                                <a href="index.html" class="nav-link">मुख पृष्‍ठ
-                                    </br> Home</a>
-                                <!-- <div class="dropdown-menu rounded-0 m-0">
+  <!-- Navbar Start -->
+  <div class="container-fluid">
+    <div class="row border-top px-xl-5">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 border-bottom">
+          <a href="" class="text-decoration-none d-block d-lg-none">
+            <h1 class="m-0"><img src="img/logo1.png" class="nav-item m-1" />
+              <span class="text-primary">BBSKSS</span>
+            </h1>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav py-0">
+              <div class="nav-item mr-3">
+                <a href="index.html" class="nav-link">मुख पृष्‍ठ
+                  </br> Home</a>
+                <!-- <div class="dropdown-menu rounded-0 m-0">
                                     <a href="blog.html" class="dropdown-item">इतिहास </br> History</a>
                                     <a href="blog.html" class="dropdown-item">हमारे महापुरुष </br> Our Great leaders</a>
                                 </div> -->
-                            </div>
+              </div>
 
-                            <!-- <a href="index.html" class="nav-item nav-link active mr-3">मुख पृष्‍ठ <br> Home</a> -->
-                            <div class="nav-item mr-3">
-                                <a href="aboutus.html" class="nav-link">हमारे बारे में </br>
-                                    About us</a>
-                                <!-- <div class="dropdown-menu rounded-0 m-0">
+              <!-- <a href="index.html" class="nav-item nav-link active mr-3">मुख पृष्‍ठ <br> Home</a> -->
+              <div class="nav-item mr-3">
+                <a href="aboutus.html" class="nav-link">हमारे बारे में </br>
+                  About us</a>
+                <!-- <div class="dropdown-menu rounded-0 m-0">
                                     <a href="aboutus.html" class="dropdown-item">उपविधि </br> Bye Laws</a>
                                 </div> -->
-                            </div>
-                            <!-- <a href="" class="nav-item nav-link mr-3">हमारे बारे में <br> About</a> -->
+              </div>
+              <!-- <a href="" class="nav-item nav-link mr-3">हमारे बारे में <br> About</a> -->
 
 
-                            <div class="nav-item dropdown mr-3">
-                                <a class="nav-link dropdown-toggle"><span>संगठनात्मक
-                                        व्यवस्था </br> Organizational Setup</span>
-                                    <!-- <i class="bi bi-chevron-down"></i> -->
-                                </a>
-                                <ul class="dropdown-menu rounded-0 m-0">
-                                    <li><a href="centralmembers.html" class="dropdown-item"> केंद्रीय समिति </br>
-                                            Central
-                                            Committee
-                                        </a></li>
-                                    <li class="dropdown">
-                                        <a class="dropdown-item">
-                                            <span> राज्‍य समिति </br> State Committees </span>
-                                            <!-- <i class="bi bi-chevron-down"></i> -->
-                                            &#11166;
-                                        </a>
-                                        <ul class="scrollable-menu">
-                                            <li><a href="ongoing.html" class="dropdown-item">दिल्‍ली </a></li>
-                                            <li><a href="members.html" class="dropdown-item">महाराष्‍ट्र </a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">तेलंगाना</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">आंध्र प्रदेश</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">कर्नाटक </a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">अरुणाचल प्रदेश</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">असम</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">बिहार</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">छत्तीसगढ़</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">गोवा</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">गुजरात</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">हरियाणा</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">हिमाचल प्रदेश</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">झारखण्ड</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">कर्नाटक</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">केरल</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">मध्य प्रदेश</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">मणिपुर</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">मेघालय</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">मिजोरम</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">नागालैंड</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">ओडिशा</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">पंजाब</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">राजस्थान</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">सिक्किम</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">तमिल नाडू</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">तेलंगाना</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">त्रिपुरा</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">उत्तर प्रदेश</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">उत्तराखंड</a></li>
-                                            <li><a href="ongoing.html" class="dropdown-item">बिहार</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+              <div class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle"><span>संगठनात्मक
+                    व्यवस्था </br> Organizational Setup</span>
+                  <!-- <i class="bi bi-chevron-down"></i> -->
+                </a>
+                <ul class="dropdown-menu rounded-0 m-0">
+                  <li><a href="centralmembers.html" class="dropdown-item"> केंद्रीय समिति </br>
+                      Central
+                      Committee
+                    </a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-item">
+                      <span> राज्‍य समिति </br> State Committees </span>
+                      <!-- <i class="bi bi-chevron-down"></i> -->
+                      &#11166;
+                    </a>
+                    <ul class="scrollable-menu">
+                      <li><a href="members.html?name=Delhi" class="dropdown-item">दिल्‍ली</a></li>
+                      <li><a href="members.html?name=Maharashtra" class="dropdown-item">महाराष्‍ट्र </a></li>
+                      <li><a href="members.html?name=Telagana" class="dropdown-item">तेलंगाना</a></li>
+                      <li><a href="members.html?name=AndhraPradesh" class="dropdown-item">आंध्र प्रदेश</a></li>
+                      <li><a href="members.html?name=Karnataka" class="dropdown-item">कर्नाटक </a></li>
+                      <li><a href="members.html?name=JammuKashmir" class="dropdown-item">जम्मू और कश्मीर </a></li>
+                      <li><a href="members.html?name=WestBengal" class="dropdown-item">पश्चिम बंगाल </a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">अरुणाचल प्रदेश</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">असम</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">बिहार</a></li>
+                      <li><a href="members.html?name=Chhattisgarh" class="dropdown-item">छत्तीसगढ़</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">गोवा</a></li>
+                      <li><a href="members.html?name=Gujarat" class="dropdown-item">गुजरात</a></li>
+                      <li><a href="members.html?name=Hariyana" class="dropdown-item">हरियाणा</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">हिमाचल प्रदेश</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">झारखण्ड</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">कर्नाटक</a></li>
+                      <li><a href="members.html?name=Kerala" class="dropdown-item">केरल</a></li>
+                      <li><a href="members.html?name=MadhyaPradesh" class="dropdown-item">मध्य प्रदेश</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">मणिपुर</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">मेघालय</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">मिजोरम</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">नागालैंड</a></li>
+                      <li><a href="members.html?name=Odisha" class="dropdown-item">ओडिशा</a></li>
+                      <li><a href="members.html?name=Panjab" class="dropdown-item">पंजाब</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">राजस्थान</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">सिक्किम</a></li>
+                      <li><a href="members.html?name=TamilNadu" class="dropdown-item">तमिल नाडू</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">तेलंगाना</a></li>
+                      <li><a href="members.html?name=Tripura" class="dropdown-item">त्रिपुरा</a></li>
+                      <li><a href="members.html?name=UttarPradesh" class="dropdown-item">उत्तर प्रदेश</a></li>
+                      <li><a href="members.html?name=UtaraKhand" class="dropdown-item">उत्तराखंड</a></li>
+                      <li><a href="ongoing.html" class="dropdown-item">बिहार</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
-                            <div class="nav-item dropdown mr-3">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">आयोजन</br>Events</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="ongoing.html" class="dropdown-item">बैठक <br> Meetings</a>
-                                    <a href="ongoing.html" class="dropdown-item">शिबिर <br> Camp</a>
-                                    <a href="ongoing.html" class="dropdown-item">सम्‍मेलन <br> Conference</a>
-                                </div>
-                            </div>
+              <div class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">आयोजन</br>Events</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="ongoing.html" class="dropdown-item">बैठक <br> Meetings</a>
+                  <a href="ongoing.html" class="dropdown-item">शिबिर <br> Camp</a>
+                  <a href="ongoing.html" class="dropdown-item">सम्‍मेलन <br> Conference</a>
+                </div>
+              </div>
 
-                            <div class="nav-item dropdown mr-3">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">गतिविधियॉं
-                                    <br>
-                                    Activities</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="training.html" class="dropdown-item">प्रशिक्षण </br> Training</a>
-                                    <a href="ongoing.html" class="dropdown-item">न्यायालयीन मामले </br> Court Affairs</a>
-                                    <a href="ongoing.html" class="dropdown-item">शिक्षा </br> Education</a>
-                                    <a href="employment.html" class="dropdown-item">रोजगार </br> Employment</a>
-                                </div>
+              <div class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">गतिविधियॉं
+                  <br>
+                  Activities</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="training.html" class="dropdown-item">प्रशिक्षण </br> Training</a>
+                  <a href="ongoing.html" class="dropdown-item">न्यायालयीन मामले </br> Court Affairs</a>
+                  <a href="ongoing.html" class="dropdown-item">शिक्षा </br> Education</a>
+                  <a href="employment.html" class="dropdown-item">रोजगार </br> Employment</a>
+                </div>
 
-                            </div>
+              </div>
 
-                            <a href="gallery.html" class="nav-item nav-link active mr-3">प्रदर्शन <br> Gallery</a>
-                            <a href="ongoing.html" class="nav-item nav-link mr-3">टैग <br> Tags</a>
+              <a href="gallery.html" class="nav-item nav-link active mr-3">प्रदर्शन <br> Gallery</a>
+              <a href="ongoing.html" class="nav-item nav-link mr-3">टैग <br> Tags</a>
 
-                            <div class="nav-item dropdown mr-3">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                    सूचना <br> Notice</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="ongoing.html" class="dropdown-item">वार्षिक रिपोर्ट <br> Annual Report</a>
-                                    <a href="Notice.html" class="dropdown-item">प्रेस सूचना <br> Press Release</a>
-                                    <a href="ongoing.html" class="dropdown-item">अन्‍य <br> Others</a>
-                                </div>
-                            </div> </br>
-                            <a href="contact.html" class="nav-item nav-link mr-3">संपर्क <br> Contact</a>
-                            </br>
+              <div class="nav-item dropdown mr-3">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  सूचना <br> Notice</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="ongoing.html" class="dropdown-item">वार्षिक रिपोर्ट <br> Annual Report</a>
+                  <a href="Notice.html" class="dropdown-item">प्रेस सूचना <br> Press Release</a>
+                  <a href="ongoing.html" class="dropdown-item">अन्‍य <br> Others</a>
+                </div>
+              </div> </br>
+              <a href="contact.html" class="nav-item nav-link mr-3">संपर्क <br> Contact</a>
+              </br>
 
-                            <a href="joinBBSKSS.html"
-                                class="nav-item nav-link bg-primary text-white px-3 py-3">बीबीएसकेएसएस
-                                से जुडें <br>
-                                Join BBSKSS</a>
-                        </div>
-                    </div>
-                </nav>
+              <a href="joinBBSKSS.html" class="nav-item nav-link bg-primary text-white px-3 py-3">बीबीएसकेएसएस
+                से जुडें <br>
+                Join BBSKSS</a>
             </div>
-        </div>
+          </div>
+        </nav>
+      </div>
     </div>
-    <!-- Navbar End -->
-    <br><br>
+  </div>
+  <!-- Navbar End -->
+  <br><br>
 
-    <main id="main">
+  <main id="main">
 
-        <!-- ======= Our Portfolio Section ======= -->
-        <!-- <section class="breadcrumbs">
+    <!-- ======= Our Portfolio Section ======= -->
+    <!-- <section class="breadcrumbs">
           <div class="container">
     
             <div class="d-flex justify-content-between align-items-center">
@@ -273,20 +294,20 @@
     
           </div>
         </section> -->
-        <!-- End Our Portfolio Section -->
-    
-        <!-- ======= Portfolio Section ======= -->
-        <section class="portfolio">
-          <div class="container">
+    <!-- End Our Portfolio Section -->
 
-            <div class="section-title text-center">
-                <h3>भारतीय बंजारा समाज कर्मचारी सेवा संस्था 
-                  महाराष्ट्र प्रदेश कार्यकारिणीची सभा दि. 29 जुलै 2023 रोजी नांदेड येथे संपन्न झाली</h3>
-                <!-- <p>भारतीय बंजारा समाज कर्मचारी सेवा संस्था 
+    <!-- ======= Portfolio Section ======= -->
+    <section class="portfolio">
+      <div class="container">
+
+        <div class="section-title text-center">
+          <h3>भारतीय बंजारा समाज कर्मचारी सेवा संस्था
+            महाराष्ट्र प्रदेश कार्यकारिणीची सभा दि. 29 जुलै 2023 रोजी नांदेड येथे संपन्न झाली</h3>
+          <!-- <p>भारतीय बंजारा समाज कर्मचारी सेवा संस्था 
                     महाराष्ट्र प्रदेश कार्यकारिणीची सभा दि. 29 जुलै 2023 रोजी नांदेड येथे संपन्न झाली</p> -->
-              </div>
-    
-            <!-- <div class="row">
+        </div>
+
+        <!-- <div class="row">
               <div class="col-lg-12">
                 <ul id="portfolio-flters">
                   <li data-filter="*" class="filter-active">All</li>
@@ -296,194 +317,215 @@
                 </ul>
               </div>
             </div> -->
-    
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 1.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap">
+            <div class="portfolio-item">
+              <img src="img/Event 1/nan-2.jpeg" class="img-fluid clickable-image" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap">
+            <div class="portfolio-item">
+              <img src="img/Event 1/nan-1.jpeg" class="img-fluid clickable-image" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap">
+            <div class="portfolio-item">
+              <img src="img/Event 1/nan-3.jpeg" class="img-fluid clickable-image" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap">
+            <div class="portfolio-item">
+              <img src="img/Event 1/nan-4.jpeg" class="img-fluid clickable-image" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 1.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>App 1</h3>
                     <div>
                       <a href="img/Event 1/image 1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 2.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 2.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Web 3</h3>
                     <div>
                       <a href="img/Event 1/image 2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 3.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 3.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>App 2</h3>
                     <div>
                       <a href="img/Event 1/image 3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 4.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 4.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Card 2</h3>
                     <div>
                       <a href="img/Event 1/image 4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 5.jpg"class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 5.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Web 2</h3>
                     <div>
                       <a href="img/Event 1/image 5.jpg"data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 6.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 6.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>App 3</h3>
                     <div>
                       <a href="img/Event 1/image 6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 7.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 7.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Card 1</h3>
                     <div>
                       <a href="img/Event 1/image 7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 8.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 8.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Card 3</h3>
                     <div>
                       <a href="img/Event 1/image 8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
-                <div class="portfolio-item">
-                  <img src="img/Event 1/image 9.jpg" class="img-fluid" alt="">
-                  <!-- <div class="portfolio-info">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+            <div class="portfolio-item">
+              <img src="img/Event 1/image 9.jpg" class="img-fluid clickable-image" alt="">
+              <!-- <div class="portfolio-info">
                     <h3>Web 1</h3>
                     <div>
                       <a href="img/Event 1/image 9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
                       <a href="portfolio-details.html" title="Portfolio Details"><i class="bx bx-link"></i></a>
                     </div>
                   </div> -->
-                </div>
-              </div>
-    
             </div>
-    
           </div>
-        </section><!-- End Portfolio Section -->
-    
-      </main><!-- End #main -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-10 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>FlatNo.103, Dhyan-Vaishnavi Apartment, Tomar Marg,
-                            Giripeth Nagpur-440010</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+91 9423472580</p>
-                        <p><i class="fa fa-envelope mr-2"></i>bbskss2020@gmail.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-5">
-                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Payback To Society</h5>
-                <p>Thank you for supporting BBSKSS. <br /> Your Payback To Society is the life of our organization.
-                    Contributions from people like you secure the Banjara Way of Life for generations to come.</p>
-            </div>
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-        style="border-color: rgba(256, 256, 256, .1) !important;">
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="row pt-5">
+      <div class="col-lg-8 col-md-12">
         <div class="row">
-            <div class="col-lg-8 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="https://www.bbskss.org"
-                        target="_blank">https://www.bbskss.org</a> All Rights Reserved. Designed by <a
-                        href="https://vhaashtech.com">VHaaSh Technologoies Private Limited</a>
-                </p>
+          <div class="col-md-10 mb-5">
+            <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>FlatNo.103, Dhyan-Vaishnavi Apartment, Tomar Marg,
+              Giripeth Nagpur-440010</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+91 9423472580</p>
+            <p><i class="fa fa-envelope mr-2"></i>bbskss2020@gmail.com</p>
+            <div class="d-flex justify-content-start mt-4">
+              <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-5">
+        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Payback To Society</h5>
+        <p>Thank you for supporting BBSKSS. <br /> Your Payback To Society is the life of our organization.
+          Contributions from people like you secure the Banjara Way of Life for generations to come.</p>
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+    style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+      <div class="col-lg-8 text-center text-md-left mb-3 mb-md-0">
+        <p class="m-0 text-white">&copy; <a href="https://www.bbskss.org" target="_blank">https://www.bbskss.org</a> All
+          Rights Reserved. Designed by <a href="https://vhaashtech.com">VHaaSh Technologoies Private Limited</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/server.min.js"></script>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- Vendor JS Files -->
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/server.min.js"></script>
+
+
+  <!-- Vendor JS Files -->
   <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -496,7 +538,7 @@
 
   <!-- Template Main JS File -->
 
-  
+
   <!-- Vendor JS Files -->
   <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -507,6 +549,28 @@
   <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
+
+  <script>
+    $(document).ready(function () {
+      $(".clickable-image").click(function () {
+        // Get the source of the clicked image
+        var imageSrc = $(this).attr("src");
+
+        // Create an enlarged image element
+        var enlargedImage = $("<div class='enlarged-image'><img src='" + imageSrc + "'></div>");
+
+        // Append the enlarged image to the body
+        $("body").append(enlargedImage);
+
+        // Close the enlarged image on click
+        enlargedImage.click(function () {
+          $(this).remove();
+        });
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
