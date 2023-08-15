@@ -38,7 +38,7 @@ $('#btnJoinBBSKSS').click(function () {
     };
 
     $.ajax({
-        url: 'http://113.193.63.106:4050/api/email',
+        url: 'https://nocast.in/api/email',
         type: 'post',
         data: JSON.stringify(request),
         contentType: "application/json",
