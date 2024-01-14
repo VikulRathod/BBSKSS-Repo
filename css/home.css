@@ -5,11 +5,12 @@
 }
 
 .marquee {
-    animation: marquee 40s linear infinite;
+    animation: marquee 35s linear infinite;
     white-space: nowrap;
 }
 
 .marquee-content {
+    display: inline-block;
     color: red;
     /* font-weight: bold; */
     font-size: 1.2rem;
