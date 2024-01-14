@@ -662,7 +662,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.80rem;
 }
 
 .lead {
@@ -4752,7 +4752,7 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.25rem;
 }
 
 .card-title {
@@ -10034,7 +10034,7 @@ h6,
 .navbar-light .navbar-nav .nav-link {
   padding: 5px 5px;
   color: #44425A;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   outline: none;
 }

@@ -1,10 +1,11 @@
 .marquee-container {
     overflow: hidden;
     width: 100%;
+    height: 5rem;
 }
 
 .marquee {
-    animation: marquee 50s linear infinite;
+    animation: marquee 40s linear infinite;
     white-space: nowrap;
 }
 
@@ -13,6 +14,10 @@
     /* font-weight: bold; */
     font-size: 1.2rem;
     overflow: hidden;
+}
+
+.marquee .marquee-content:hover {
+    animation-play-state: paused;
 }
 
 @keyframes marquee {
